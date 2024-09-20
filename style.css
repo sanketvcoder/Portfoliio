@@ -379,8 +379,8 @@ ul {
 }
 
 .home-img::after {
-    right: 50px;
-    bottom: -17px;
+    right: 60px;
+    bottom: 208px;
     border-width: 0 10px 10px 0;
 }
 
@@ -451,6 +451,11 @@ ul {
     }
     .home .home-img img {
         max-width: 100%;
+    }
+    .home-img::after {
+        right: 50px;
+        bottom: -17px;
+        border-width: 0 10px 10px 0;
     }
 }
 
@@ -630,6 +635,11 @@ ul {
 /* Adjustments for About Section */
 
 @media (max-width: 992px) {
+    .home-img::after {
+        right: 50px;
+        bottom: -17px;
+        border-width: 0 10px 10px 0;
+    }
     .about .about-content .personal-info,
     .about .about-content .skills,
     .about .about-content .education {
@@ -643,6 +653,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .home-img::after {
+        right: 50px;
+        bottom: -17px;
+        border-width: 0 10px 10px 0;
+    }
     .about .about-content .personal-info,
     .about .about-content .skills,
     .about .about-content .education {
