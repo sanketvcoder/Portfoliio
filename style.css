@@ -379,14 +379,14 @@ ul {
 }
 
 .home-img::after {
-    right: 60px;
-    bottom: 208px;
+    right: 77px;
+    bottom: 431px;
     border-width: 0 10px 10px 0;
 }
 
 .home-img::before {
-    left: 55px;
-    top: -19px;
+    left: 73px;
+    top: -29px;
     border-width: 10px 0 0 10px;
 }
 
