@@ -4,88 +4,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="style.css">
-
     <title>Profile</title>
+    <style>
+        /* Insert the updated CSS provided below here */
+    </style>
 </head>
 
 <body>
     <!-- Main Container Start -->
     <div class="main-container">
-        <!-- Aside start -->
+        <!-- Aside Start -->
         <div class="aside">
+            <!-- Close Button (Visible on Small Screens) -->
+
             <div class="logo">
-                <a href="#"><span>A</span>tlas</a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
+                <a href="#"><span>P</span>rofile</a>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Service</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i> Service</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
         </div>
-        <!-- Aside Ends-->
-        <!--Main Content Start-->
+        <!-- Aside Ends -->
+
+        <!-- Nav Toggler (Visible on Small Screens) -->
+        <div class="nav-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Main Content Start -->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home section hidden">
+            <section id="home" class="home section">
                 <div class="container">
                     <div class="row">
+                        <div class="home-img padd-15">
+                            <img src="my_profile_pic_sanket.jpg" alt="Profile Image">
+                        </div>
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Sanket Kumar Verma</span></h3>
+                            <h3 class="hello">Hello, my name is <span class="name"><br>Sanket Kumar Verma</span></h3>
                             <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
                             <p>I'm a web Designer with extensive experience for over 2 Years. My expertise is to create and website design, Creating app design and many more ...</p>
                             <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
-                        <div class="home-img padd-15">
-                            <img src="ogo.jpg" alt="">
-                        </div>
+
                     </div>
                 </div>
             </section>
             <!-- Home Section Ends -->
-            <!--About Section Start -->
 
-            <section class="about section">
+            <!-- About Section Start -->
+            <section id="about" class="about section hidden">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>About Me</h2>
                         </div>
                     </div>
+                    <!-- About Content -->
                     <div class="row">
                         <div class="about-content padd-15">
+                            <!-- About Text -->
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>I'm Sanket Kumar Verma and <span>Web Developer</span></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur delectus reiciendis repellat architecto. Ipsa dolorem in dolorum optio eaque eligendi, corrupti delectus aut voluptatum? Repellat velit reiciendis
-                                        deserunt at, aliquam accusamus est et!</p>
+                                    <p>Hi everyone, I'm Sanket Kumar Verma! I'm a Web developer, which means I'm skilled in building dynamic web applications using MongoDB, Express.js, React.js, and Node.js. While I currently focus on the MERN stack, I'm
+                                        also passionate about pursuing a career as a Software Development Engineer (SDE) with a strong foundation in Java. This dual focus allows me to leverage the power of both front-end and back-end development, creating
+                                        a well-rounded skillset for crafting exceptional web experiences.</p>
                                 </div>
                             </div>
+                            <!-- Personal Info and Skills -->
                             <div class="row">
-                                <div class="personal-info">Info</div>
-                                <div class="skills">Skills</div>
+                                <!-- Personal Info -->
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Birthday : <span>25 July 2003</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Age : <span>21</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Email : <span>sanketv403@gmail.com</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Linkedin : <span><a href="https://www.linkedin.com/in/sanket-verma-982970214/?trk=opento_sprofile_details"><b><u>Profile Linkedin.in</u></b></a></span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Degree : <span>CS</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Phone : <span>+91 7003298750</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                City : <span>Kolkata</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Country : <span>India</span>
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a href="#" class="btn">Download CV</a>
+                                                <a href="#contact" class="btn">Hire Me</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Skills -->
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:76%;"></div>
+                                                <div class="skill-percent">
+                                                    76%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>JS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:66%;"></div>
+                                                <div class="skill-percent">
+                                                    66%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>React</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:70%;"></div>
+                                                <div class="skill-percent">
+                                                    70%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Java</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:86%;"></div>
+                                                <div class="skill-percent">
+                                                    86%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education -->
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="education">Education</h3>
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <div class="timeline-item padd-15">
+                                                <div class="circle-dot"></div>
+                                                <div class="timeline-date">
+                                                    <i class="fa fa-calendar"></i>2021-2025
+                                                </div>
+                                                <h4 class="timeline-title">B.Tech in Computer Science</h4>
+                                                <p class="timeline-text">Hi, I have completed my Graduation from <span style="color: #ec1839;">University of Engineering & Management</span></p>
+                                            </div>
+                                            <div class="timeline-item padd-15">
+                                                <div class="circle-dot"></div>
+                                                <div class="timeline-date">
+                                                    <i class="fa fa-calendar"></i>2019-2021
+                                                </div>
+                                                <h4 class="timeline-title">Higher Secondary</h4>
+                                                <p class="timeline-text">Hi, I have completed my Higher Secondary from <span style="color: #ec1839;">Kalyani Central Model High School</span></p>
+                                            </div>
+                                            <div class="timeline-item padd-15">
+                                                <div class="circle-dot"></div>
+                                                <div class="timeline-date">
+                                                    <i class="fa fa-calendar"></i>2019
+                                                </div>
+                                                <h4 class="timeline-title">Class 10th</h4>
+                                                <p class="timeline-text">Hi, I have completed my Class 10th from <span style="color: #ec1839;">National High School</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Education -->
+                        </div>
+                    </div>
+            </section>
+            <!-- About Section Ends-->
+
+            <!-- Services Section Start -->
+            <section id="service" class="service-section section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Service</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Service items -->
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                             </div>
                         </div>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Graphic Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Backend Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>SEO Optimization</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Digital Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                        <!-- Repeat for other service items if needed -->
                     </div>
                 </div>
             </section>
+            <!-- Services Section Ends-->
 
-            <!--About section End-->
+            <!-- Portfolio Section Start -->
+            <section id="portfolio" class="portfolio section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading">
+                            <h2>My Latest Projects:</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Portfolio items -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="project-1.png" alt="Project 1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="project-2.png" alt="Project 2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="project-3.png" alt="Project 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="project-4.png" alt="Project 4">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more portfolio items as needed -->
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio Section Ends-->
+
+            <!-- Contact Section Start -->
+            <section id="contact" class="contact section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have you any Questions?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- Contact Info -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+91 7003298750</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>House</h4>
+                            <p>Kolkata</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>sanketv403@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4>Linkedin</h4>
+                            <p><a href="https://www.linkedin.com/in/sanket-verma-982970214/?trk=opento_sprofile_details"><b><u>Profile Linkedin.in</u></b></a></p>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <!-- You can add a contact form here -->
+                </div>
+            </section>
+            <!-- Contact Section Ends-->
+            </div>
         </div>
-        <!--Main Content End-->
-    </div>
-    <!-- Main Container End -->
-    <!-- All JS File -->
+
+        <!-- Overlay (Optional for better UX) -->
+        <div class="overlay hidden"></div>
+
+        <!-- JavaScript for Toggle and Section Navigation -->
+        <script src="./index.js"></script>
 </body>
 
 </html>
