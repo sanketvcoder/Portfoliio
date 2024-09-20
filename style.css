@@ -425,6 +425,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .home-img::after {
+        right: 58px;
+        bottom: -6px;
+        border-width: 0 10px 10px 0;
+    }
     .home {
         flex-direction: column;
     }
@@ -439,6 +444,11 @@ ul {
 }
 
 @media (max-width: 576px) {
+    .home-img::after {
+        right: 58px;
+        bottom: -6px;
+        border-width: 0 10px 10px 0;
+    }
     .home-info h3.hello {
         font-size: 22px;
     }
@@ -636,6 +646,11 @@ ul {
 
 @media (max-width: 992px) {
     .home-img::after {
+        right: 58px;
+        bottom: -6px;
+        border-width: 0 10px 10px 0;
+    }
+    .home-img::after {
         right: 50px;
         bottom: -17px;
         border-width: 0 10px 10px 0;
@@ -654,9 +669,14 @@ ul {
 
 @media (max-width: 768px) {
     .home-img::after {
-        right: 50px;
-        bottom: -17px;
+        right: 58px;
+        bottom: -6px;
         border-width: 0 10px 10px 0;
+    }
+    .home-img::before {
+        left: 58px;
+        top: -18px;
+        border-width: 10px 0 0 10px;
     }
     .about .about-content .personal-info,
     .about .about-content .skills,
